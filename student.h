@@ -18,11 +18,8 @@ public:
    virtual double Average () = 0;  // makes class abstract -- only here so 
                                    // program can compile 
 protected:
-   string firstName;               
-   string lastName;
-   string courseName;
-   int numOfStudents;
-   int finalExam;
+   string firstName, lastName, courseName;
+   int numOfStudents, finalExam;
    double average;
    char grade;
 };
@@ -40,9 +37,7 @@ public:
    double Average ();
 
 private:
-   int attendance;
-   int project;
-   int midterm;
+   int attendance, project, midterm;
 };
 
 class History : public Student 
@@ -57,8 +52,7 @@ public:
    double Average ();
 
 private:
-   int termPaper;
-   int midterm;
+   int termPaper, midterm;
 };
 
 class Math : public Student
@@ -75,11 +69,5 @@ public:
    double Average ();
 
 private:
-   int quiz1;
-   int quiz2;
-   int quiz3;
-   int quiz4;
-   int quiz5;
-   int test1;
-   int test2;
+   int quiz1, quiz2, quiz3, quiz4, quiz5, test1, test2;
 };
