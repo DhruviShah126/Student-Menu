@@ -143,10 +143,7 @@ double Math::Average ()
   double exam;
 
   fiveQuizAvg = ((quiz1 + quiz2 + quiz3 + quiz4 + quiz5) / 5.0); 
-                             // calculates avg of the 5 quizzes
-                             // divided by 5.0 to make sure the answer is a 
-                             // double and not int
-
+                             // divided by 5.0 to make sure the answer is a double and not int
   overallQuizAvg = fiveQuizAvg * qPerc;
   testF = test1 * firstTestPerc;
   testS = test2 * secTestPerc;
