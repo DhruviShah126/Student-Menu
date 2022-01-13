@@ -4,16 +4,15 @@
 
 using namespace std;
 
-void ShowMenu();             // prototype for function that prints the menu
+void ShowMenu();            
 
 int main ()
 {
   StudentList s1;            // creates an object of type StudentList
 
-  char userChoice;           // stores the letter the user enters in 
-                             // for the menu 
-  char inputFile [31];       // stores the name of the input file
-  char exportFile [31];      // stores the name of the output file
+  char userChoice;           // stores the letter the user enters in for the menu 
+  char inputFile [31];      
+  char exportFile [31];      
 
   ShowMenu();
   cout << ">";
