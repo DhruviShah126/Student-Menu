@@ -59,12 +59,10 @@ char Student::LetterGrade ()
 
 void Student::ListPrint() const
 {
-   cout << setw(31) << left << lastName << setw(31) << left << firstName 
-        << courseName << "\n";
+   cout << setw(31) << left << lastName << setw(31) << left << firstName << courseName << "\n";
 }
 
-English::English (string lastN, string firstN, int atten, int proj, int 
-                  midtrm, int final, string c)
+English::English (string lastN, string firstN, int atten, int proj, int midtrm, int final, string c)
                  : Student (lastN, firstN, final, c)
 {
   attendance = atten;
@@ -93,8 +91,8 @@ double English::Average ()
   return average;
 }
 
-History::History(string lastN, string firstN, int paper, int midtrm, int final, 
-                 string c): Student (lastN, firstN, final, c) 
+History::History(string lastN, string firstN, int paper, int midtrm, int final, string c)
+                : Student (lastN, firstN, final, c) 
 {
   termPaper = paper;
   midterm = midtrm;
@@ -118,8 +116,7 @@ double History::Average ()
   return average;
 }
 
-Math::Math (string lastN, string firstN, int q1, int q2, int q3, int q4, int q5, 
-            int t1, int t2, int final, string c)
+Math::Math (string lastN, string firstN, int q1, int q2, int q3, int q4, int q5, int t1, int t2, int final, string c)
             : Student(lastN, firstN, final, c)
 {
   quiz1 = q1;
